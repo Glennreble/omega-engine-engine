@@ -1,8 +1,8 @@
 var mod = {
     primaryName: "ΩL",
     secondaryName: " EZ",
-    version: "1.7.0.3",
-    engineVer: "1.0.0", //DO NOT MODIFY
+    version: "1.7.1",
+    engineVer: "1.0.1", //DO NOT MODIFY
     debugMode: false,
     Infinities: [new Decimal(2).pow(1024), new Decimal("1.8e30008"), new Decimal("1.8e300000008"), new Decimal("ee38")],
     themes: [
@@ -10,6 +10,7 @@ var mod = {
         ["Light (Legacy)", "https://veprogames.github.io/omega-layers/css/main.css"],
         ["Light", "css/themes/light.css"],
         ["Neon", "css/themes/neon.css"],
+        ["Modern", "css/themes/modern.css"],
         ["Godot Blue", "css/themes/darkblue.css"],
         ["Halloween", "css/themes/spooky.css"],
         ["eXPerience", "css/themes/experience.css"],
@@ -89,7 +90,7 @@ var mod = {
             ["Coal", "Copper", "Amethyst", "Lapis", "Iron", "Gold", "Redstone", "Emerald", "Diamond", "Quartz", "Netherrite"],
             ["Overworld", "Nether", "End", "Aether"]
         ]
-        ],
+        ]],
         ["Minecraft shorthand (Nif)",
         [
             ["O", "S", "B", "J", "A", "DO", "C", "W", "M", "B", "CT"],
@@ -124,7 +125,22 @@ var mod = {
             Utils.createRandomWord(10, new Random(Math.floor(Date.now()/2)).nextInt()),
             [Utils.createRandomWord(2, new Random(Math.floor(Date.now()/3)).nextInt()),Utils.createRandomWord(3, new Random(Math.floor(Date.now()/4)).nextInt()),Utils.createRandomWord(4, new Random(Math.floor(Date.now()/5)).nextInt()),Utils.createRandomWord(5, new Random(Math.floor(Date.now()/6)).nextInt())]
         ]],
+        ["BR2048 (Glitch)",
+        [
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ[]",
+            "@#$_&-+()/",
+            "§∆×÷"
+        ]
+        ],
+        ["GCI Layers (Glitch)",
+        [
+            ["Grass", "Perks", "PP", "Crystals", "Grasshop", "Steel", "Charge", "Rocket Fuel", "Momentum", "Stars", "Fun", "Grass-Skip", "Dark Matter", "Planetarium", "Lines", "Arcs", "Stardust", "Solar Shards", "Solar Flares", "Solarians"],
+            ["Loops", "Mega Loops", "Super Mega Loops", "Super Ultra Mega Loops", "Omega Loops"],
+            ["True End", "M.G.E.T.E", "S.E.M.G.T.E", "S.N.A.T.G.U.O.S.E.M.G.T.E"]
+        ]
+        ],
     ],
+    layerNamePlaceholder: "𐌒",
     fonts: [
         ["Monospace Typewriter", "css/fonts/typespace.css"],
         ["Comic Sans", "css/fonts/comic.css"],
@@ -144,6 +160,7 @@ var mod = {
         ["Save 3", "3"],
         ["Save 4", "4"],
         ["Save 5", "5"],
+        ["Cloud Save", "C"]
     ],
     extraNames: [
         this.primaryName+this.secondaryName, //title name
