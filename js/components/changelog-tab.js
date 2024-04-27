@@ -1,6 +1,11 @@
 Vue.component("changelog-tab", {
     template: `<div class="changelog-tab">
     <guide-item>
+    <template v-slot:title>v1.7.1 - OMEGAIZE</template>
+    <template v-slot:text>- Added BR2048 and GCI Layers layer names!<br>More coming soon!
+    </template>
+    </guide-item>
+    <guide-item>
     <template v-slot:title>v1.7.0.3 - Lil Fix</template>
     <template v-slot:text>- Just Lil Fix<br>- Yeah That's about it by JeehanMoment
     </template>
