@@ -146,6 +146,7 @@ var mod = {
         ["Comic Sans", "css/fonts/comic.css"],
         ["Arial", "css/fonts/arial.css"],
         ["Roboto", "css/fonts/roboto.css"],
+        ["Source Code Pro", "css/fonts/scp.css"],
         ["Comfortaa", "css/fonts/comfortaa.css"],
         ["Minecraft", "css/fonts/minecraft.css"],
         ["Ubuntu", "css/fonts/ubuntu.css"],
@@ -153,6 +154,7 @@ var mod = {
         ["Courier", "css/fonts/courier.css"],
         ["Montserrat", "css/fonts/montserrat.css"],
         ["Depixel (Hallbfett)", "css/fonts/depixelhbf.css"]
+        ["Rubik", "css/fonts/rubik.css"],
     ],
     saves: [
         ["Save 1", ""],
