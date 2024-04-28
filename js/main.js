@@ -91,8 +91,10 @@ function tickGame(seconds)
         }
     }
 
+    game.bestnumber = Decimal.max(new Decimal(game.bestnumber), game.functionsLayer.number)
     game.highestLayer = Decimal.max(new Decimal(game.highestLayer), game.layers.length - 1);
     game.highestLayer = Decimal.max(new Decimal(game.highestLayer), game.metaLayer.layer);
+    game.highestLayerpremeta = Decimal.max(new Decimal(game.layers.highestLayerpremeta), game.layers.length - 1);
     game.highestUpdatedLayer = Decimal.max(new Decimal(game.highestUpdatedLayer), game.layers.length - 1);
     game.highestUpdatedLayer = Decimal.max(new Decimal(game.highestUpdatedLayer), game.metaLayer.layer);
 
