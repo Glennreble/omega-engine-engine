@@ -1,4 +1,4 @@
-var mod = {
+const mod = {
     primaryName: "ΩL",
     secondaryName: " EZ",
     version: "1.7.1",
@@ -162,7 +162,7 @@ var mod = {
         ["Save 3", "3"],
         ["Save 4", "4"],
         ["Save 5", "5"],
-        ["Cloud Save", "C"]
+        ["Cloud Save", "6"]
     ],
     extraNames: [
         this.primaryName+this.secondaryName, //title name
