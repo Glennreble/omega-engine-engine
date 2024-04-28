@@ -146,6 +146,10 @@ const functions = {
             {
                 return {aleph: "d" + value.aleph, upgrades: value.upgrades};
             }
+            if(value instanceof FunctionsLayer)
+            {
+                return {functionsPoints: "d" + value.functionsPoints, number: "d" + value.number, upgrades: value.upgrades};
+            }
             if(value instanceof Generator)
             {
                 return {amount: "d" + value.amount, bought: "d" + value.bought};
@@ -266,6 +270,14 @@ const functions = {
         else
         {
             game.alephLayer = new AlephLayer();
+        }
+        if(loadObj.functionsLayer)
+        {
+            game.functionsLayer.loadFromSave(loadObj.functionsLayer);
+        }
+        else
+        {
+            game.functionsLayer = new FunctionsLayer();
         }
         if(loadObj.automators)
         {
