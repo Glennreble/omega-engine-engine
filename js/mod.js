@@ -154,7 +154,7 @@ const mod = {
         ["Courier", "css/fonts/courier.css"],
         ["Montserrat", "css/fonts/montserrat.css"],
         ["Depixel (Hallbfett)", "css/fonts/depixelhbf.css"],
-        ["Rubik", "css/fonts/rubik.css"],
+        ["Rubik", "css/fonts/rubik.css"]
     ],
     saves: [
         ["Save 1", ""],
